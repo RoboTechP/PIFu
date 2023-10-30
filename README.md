@@ -58,7 +58,7 @@ Warning: I found that outdated NVIDIA drivers may cause errors with EGL. If you 
 - `eval "$(conda shell.bash hook)"` then `conda activate my_env` because of [this](https://github.com/conda/conda-build/issues/3371)
 - Automatic `env create -f environment.yml` (look [this](https://github.com/conda/conda/issues/3417))
 - OR manually setup [environment](https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533)
-    - `conda create —name pifu python` where `pifu` is name of your environment
+    - `conda create --name pifu python` where `pifu` is name of your environment
     - `conda activate`
     - `conda install pytorch torchvision cudatoolkit=10.1 -c pytorch`
     - `conda install pillow`
